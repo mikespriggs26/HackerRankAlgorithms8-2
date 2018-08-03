@@ -10,22 +10,52 @@ namespace HackerRankAlgorithms8_2
     {
         static void Main(string[] args)
         {
-            int n = 352926151; //# of prisoners
-            int m = 380324688; //# of treats
-            int s = 94730870; //the first chair
+            //************Save the Prisoner         NOT DONE
+            //int n = 352926151; //# of prisoners
+            //int m = 380324688; //# of treats
+            //int s = 94730870; //the first chair
 
-            int j = m % n;
-            int finalChair = s - 1 + j;
-            
+            //int j = m % n;
+            //int finalChair = s - 1 + j;
+
+            //Console.WriteLine(finalChair);
+
+            int[] a = new int[] { 1,2,3 };
+            int[] b = new int[a.Length];    //rotated array
+            int k = 2;  //rotation count
+            int q = 3;  //# of queries
+            int[] queries = new int[] { 0, 1, 2 };
+
+            b[0] = a[a.Length - k];
+            for
+            for (int i = 1; i < a.Length; i++)
+            {
+                b[i] = b[i - k];
+            }
 
 
-            //int finalChair = (s - 1 + m) % n;
-            //if(finalChair == 0)
+            //for (int i = 1; i <= k; i++)
             //{
-            //    finalChair = s;
+            //    b[0] = a[a.Length -1];   
+            //    for (int j = 1; j < a.Length; j++)
+            //    {
+            //        b[j] = a[j - 1];
+            //    }
             //}
+            //for (int t = 0; t < queries.Length; t++)
+            //{
+            //    c[k] = b[queries[t]];
+            //}
+            //foreach (var item in queries)
+            //{
+            //    Console.WriteLine(b[item]);
+            //}
+            //return c;
+            foreach (var item in b)
+            {
+                Console.WriteLine(item);
+            }
 
-            Console.WriteLine(finalChair);
 
             Console.ReadLine();
 
