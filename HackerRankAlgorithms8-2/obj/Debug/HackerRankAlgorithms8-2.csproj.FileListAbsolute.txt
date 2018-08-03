@@ -1,0 +1,7 @@
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\bin\Debug\HackerRankAlgorithms8-2.exe.config
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\bin\Debug\HackerRankAlgorithms8-2.exe
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\bin\Debug\HackerRankAlgorithms8-2.pdb
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\obj\Debug\HackerRankAlgorithms8-2.csprojResolveAssemblyReference.cache
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\obj\Debug\HackerRankAlgorithms8-2.csproj.CoreCompileInputs.cache
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\obj\Debug\HackerRankAlgorithms8-2.exe
+c:\users\mikes\source\repos\HackerRankAlgorithms8-2\HackerRankAlgorithms8-2\obj\Debug\HackerRankAlgorithms8-2.pdb
