@@ -10,6 +10,34 @@ namespace HackerRankAlgorithms8_2
     {
         static void Main(string[] args)
         {
+            //*************Electronics Shop
+            int b = 10; //budget
+            int n = 2;  //# of keyboards models
+            int m = 3;  //# of USB drive models
+            int maxPrice = 0;
+            int[] keyboards = new int[] { 3, 1 };
+            int[] drives = new int[] { 5, 2, 8 };
+            foreach (var item in keyboards)
+            {
+                for (int i = 0; i < drives.Length; i++)
+                {
+                    if(item + drives[i] > maxPrice && item + drives[i] < b)
+                    {
+                        maxPrice = item + drives[i];
+                    }
+                }
+            }
+            if(maxPrice == 0)
+            {
+                Console.WriteLine("-1");
+            }
+            else
+            {
+                Console.WriteLine(maxPrice);
+            }
+
+
+
             //************Save the Prisoner         NOT DONE
             //int n = 352926151; //# of prisoners
             //int m = 380324688; //# of treats
@@ -20,18 +48,18 @@ namespace HackerRankAlgorithms8_2
 
             //Console.WriteLine(finalChair);
 
-            int[] a = new int[] { 1,2,3 };
-            int[] b = new int[a.Length];    //rotated array
-            int k = 2;  //rotation count
-            int q = 3;  //# of queries
-            int[] queries = new int[] { 0, 1, 2 };
+            //int[] a = new int[] { 1,2,3 };
+            //int[] b = new int[a.Length];    //rotated array
+            //int k = 2;  //rotation count
+            //int q = 3;  //# of queries
+            //int[] queries = new int[] { 0, 1, 2 };
 
-            b[0] = a[a.Length - k];
-            for
-            for (int i = 1; i < a.Length; i++)
-            {
-                b[i] = b[i - k];
-            }
+            //b[0] = a[a.Length - k];
+            //for
+            //for (int i = 1; i < a.Length; i++)
+            //{
+            //    b[i] = b[i - k];
+            //}
 
 
             //for (int i = 1; i <= k; i++)
@@ -48,13 +76,13 @@ namespace HackerRankAlgorithms8_2
             //}
             //foreach (var item in queries)
             //{
-            //    Console.WriteLine(b[item]);
+            //    Console./*WriteLine*/(b[item]);
             //}
             //return c;
-            foreach (var item in b)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in b)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
 
             Console.ReadLine();
