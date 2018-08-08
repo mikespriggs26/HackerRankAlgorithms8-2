@@ -10,31 +10,68 @@ namespace HackerRankAlgorithms8_2
     {
         static void Main(string[] args)
         {
+            //**********Find Digits
+            int n = 1012;
+
+            //for
+            int left = n;
+            int rev = 0;
+            while (left > 0)
+            {
+                r = left % 10;
+                rev = rev * 10 + r;
+                left = left / 10;  //left = Math.floor(left / 10); 
+            }
+            Console.WriteLine(rev);
+
+            //*****Beautiful Days at the Movies
+            //int i = 20;
+            //int j = 23;
+            //int k = 6;
+            //int counter = 0;
+            //int left = n;
+            //int rev = 0;
+            //while (left > 0)
+            //{
+            //    r = left % 10;
+            //    rev = rev * 10 + r;
+            //    left = left / 10;  //left = Math.floor(left / 10); 
+            //}
+            //for (int m = i; m < j; m++)
+            //{
+            //    if (m % k == 0)
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine(counter);
+
+
             //*************Electronics Shop
-            int b = 10; //budget
-            int n = 2;  //# of keyboards models
-            int m = 3;  //# of USB drive models
-            int maxPrice = 0;
-            int[] keyboards = new int[] { 3, 1 };
-            int[] drives = new int[] { 5, 2, 8 };
-            foreach (var item in keyboards)
-            {
-                for (int i = 0; i < drives.Length; i++)
-                {
-                    if(item + drives[i] > maxPrice && item + drives[i] < b)
-                    {
-                        maxPrice = item + drives[i];
-                    }
-                }
-            }
-            if(maxPrice == 0)
-            {
-                Console.WriteLine("-1");
-            }
-            else
-            {
-                Console.WriteLine(maxPrice);
-            }
+            //int b = 10; //budget
+            //int n = 2;  //# of keyboards models
+            //int m = 3;  //# of USB drive models
+            //int maxPrice = 0;
+            //int[] keyboards = new int[] { 3, 1 };
+            //int[] drives = new int[] { 5, 2, 8 };
+            //foreach (var item in keyboards)
+            //{
+            //    for (int i = 0; i < drives.Length; i++)
+            //    {
+            //        if(item + drives[i] > maxPrice && item + drives[i] < b)
+            //        {
+            //            maxPrice = item + drives[i];
+            //        }
+            //    }
+            //}
+            //if(maxPrice == 0)
+            //{
+            //    Console.WriteLine("-1");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(maxPrice);
+            //}
 
 
 
