@@ -12,17 +12,34 @@ namespace HackerRankAlgorithms8_2
         {
             //**********Find Digits
             int n = 1012;
+            List<int> list = new List<int>();
+            int whileCounter = 0;
+            int finalCounter = 0;
 
-            //for
+            
             int left = n;
             int rev = 0;
             while (left > 0)
             {
-                r = left % 10;
+                int r = left % 10;
+                list.Add(r);
                 rev = rev * 10 + r;
-                left = left / 10;  //left = Math.floor(left / 10); 
+                left = left / 10;
+                whileCounter++;
             }
-            Console.WriteLine(rev);
+            foreach (var item in list)
+            {
+                if(item == 0)
+                {
+                    continue;
+                }
+                else if(n % item == 0)
+                {
+                    finalCounter++;
+                }
+            }
+
+            Console.WriteLine(finalCounter);
 
             //*****Beautiful Days at the Movies
             //int i = 20;
