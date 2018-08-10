@@ -10,36 +10,44 @@ namespace HackerRankAlgorithms8_2
     {
         static void Main(string[] args)
         {
-            //**********Find Digits
-            int n = 1012;
-            List<int> list = new List<int>();
-            int whileCounter = 0;
-            int finalCounter = 0;
+            //**********Find Digits         REVERSING AN INT
+            //int n = 1012;
+            //List<int> list = new List<int>();
+            //int whileCounter = 0;
+            //int finalCounter = 0;
 
-            
-            int left = n;
-            int rev = 0;
-            while (left > 0)
-            {
-                int r = left % 10;
-                list.Add(r);
-                rev = rev * 10 + r;
-                left = left / 10;
-                whileCounter++;
-            }
-            foreach (var item in list)
-            {
-                if(item == 0)
-                {
-                    continue;
-                }
-                else if(n % item == 0)
-                {
-                    finalCounter++;
-                }
-            }
 
-            Console.WriteLine(finalCounter);
+            //int left = n;
+            //int rev = 0;
+            //while (left > 0)
+            //{
+            //    int r = left % 10;
+            //    list.Add(r);
+            //    rev = rev * 10 + r;
+            //    left = left / 10;
+            //    whileCounter++;
+            //}
+            //foreach (var item in list)
+            //{
+            //    if(item == 0)
+            //    {
+            //        continue;
+            //    }
+            //    else if(n % item == 0)
+            //    {
+            //        finalCounter++;
+            //    }
+            //}
+
+            //Console.WriteLine(finalCounter);
+
+            //********Sock Merchant
+            int[] ar = new int[] { 10, 20, 20, 10, 10, 30, 50, 10, 20, };
+
+            for (int i = 0; i < ar.Length; i++)
+            {
+
+            }
 
             //*****Beautiful Days at the Movies
             //int i = 20;
