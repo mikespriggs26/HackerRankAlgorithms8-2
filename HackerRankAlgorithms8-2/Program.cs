@@ -41,13 +41,66 @@ namespace HackerRankAlgorithms8_2
 
             //Console.WriteLine(finalCounter);
 
-            //********Sock Merchant
-            int[] ar = new int[] { 10, 20, 20, 10, 10, 30, 50, 10, 20, };
+            //********Sock Merchant     NOT DONE
+            //int[] ar = new int[] { 10, 20, 20, 10, 10, 30, 50, 10, 20, };
 
-            for (int i = 0; i < ar.Length; i++)
+            //for (int i = 0; i < ar.Length; i++)
+            //{
+
+            ////}
+
+            //*******Cut the sticks
+            //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
+            int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
+            List<int> list = new List<int>();
+
+            list.AddRange(arr);
+           
+            while (list.Count > 0)
             {
+                int counter = 0;
+                int counter2 = 0;
+                int minValue = list.Min();
+                Console.WriteLine("asdljf" + minValue);
+                //for (int j = 0; j < list.Count; j++)
+                //{
+                //    minValue = 1000;
+                //    if (list[j] < minValue)
+                //    {
+                //        minValue = list[j];
 
+                //    }
+                //}
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        if (list[i] == minValue )
+                        {
+                            counter++;
+                            //list.Remove(list[i]);
+                        }
+                        else if (list[i] > minValue)
+                        {
+                            list[i] -= minValue;
+                            counter++;
+                        }
+                        //Console.WriteLine(counter);
+                    }
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i] == minValue)
+                    {
+                        list.Remove(list[i]);
+                        counter2++;
+
+                    }
+                }
+                    Console.WriteLine(counter);
+                Console.WriteLine(counter2);
+                
+                //Console.WriteLine(counter);
             }
+
+
 
             //*****Beautiful Days at the Movies
             //int i = 20;
