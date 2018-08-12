@@ -50,53 +50,59 @@ namespace HackerRankAlgorithms8_2
             ////}
 
             //*******Cut the sticks
-            //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
-            int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
+            int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
+            //int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
+            arr.OrderByDescending(x => x);
             List<int> list = new List<int>();
-
-            list.AddRange(arr);
-           
-            while (list.Count > 0)
+            list.AddRange(arr.OrderByDescending(x => x));
+            //var newList = list.OrderByDescending(x => x);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item); 
+            }
+             
+            while (list.Count() > 0)
             {
                 int counter = 0;
-                int counter2 = 0;
                 int minValue = list.Min();
-                Console.WriteLine("asdljf" + minValue);
-                //for (int j = 0; j < list.Count; j++)
-                //{
-                //    minValue = 1000;
-                //    if (list[j] < minValue)
-                //    {
-                //        minValue = list[j];
-
-                //    }
-                //}
-                    for (int i = 0; i < list.Count; i++)
+                Console.WriteLine("minValue: " + minValue);
+                Console.WriteLine(list.Count());
+                for (int i = 0; i < list.Count(); i++)
+                {
+                    counter++;
+                    if (list[i] <= minValue && list[i] >= 0)
                     {
-                        if (list[i] == minValue )
-                        {
-                            counter++;
-                            //list.Remove(list[i]);
-                        }
-                        else if (list[i] > minValue)
-                        {
-                            list[i] -= minValue;
-                            counter++;
-                        }
+
+                        Console.WriteLine("if list[i]   " + list[i]);
+                        //Console.WriteLine(counter);
+                        //counter++;
+                        //list.Remove(list[i]);
                         //Console.WriteLine(counter);
                     }
+                    else if (list[i] > minValue)
+                    {
+                        list[i] -= minValue;
+                        Console.WriteLine("else if list[i] " + list[i]);
+                        //Console.WriteLine(counter);
+                        //counter++;
+                        //Console.WriteLine(counter);
+                    }
+                    Console.WriteLine(counter);
+                }
+                Console.WriteLine(counter);
                 for (int i = 0; i < list.Count; i++)
                 {
-                    if (list[i] == minValue)
+                    //list[i] -= minValue;
+
+                    if (list[i] <= minValue)
                     {
+                        Console.WriteLine("Removing spot: " + i);
                         list.Remove(list[i]);
-                        counter2++;
 
                     }
                 }
-                    Console.WriteLine(counter);
-                Console.WriteLine(counter2);
-                
+                //Console.WriteLine(counter); 
+
                 //Console.WriteLine(counter);
             }
 
